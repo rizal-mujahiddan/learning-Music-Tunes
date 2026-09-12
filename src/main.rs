@@ -70,7 +70,7 @@ fn main() -> Result<()> {
             G5,F5,D6,C6,B5,A5,G5,F5,
             F5,E5,C6,B5,A5,G5,F5,E5,
             ], sixteenth)
-        .notes(&[D5,A5,G5,B4],quarter)
+        .notes(&[D5,A5,G5,B4],eighth)
         .note(&[C5], quarter).wait(quarter)
         ;
 
@@ -133,10 +133,15 @@ fn main() -> Result<()> {
         .note(&[E4],eighth+sixteenth)
         .note(&[C4],sixteenth)
         .notes(&[B3,C3,C4,E4,C4,F4,C4],quarter)
-        .note(&[C4,E4],sixteenth).wait(eighth+sixteenth).note(&[CS4], sixteenth)
+        .note(&[C4,E4],quarter).wait(eighth+sixteenth).note(&[CS4], sixteenth)
         .note(&[D4],quarter).wait(eighth+sixteenth).note(&[B3], sixteenth)
         .note(&[C4],quarter).wait(eighth+sixteenth).note(&[A3], sixteenth)
         .notes(&[F3,G3,C4,C3],quarter)
+        // var 2
+        // .notes(&[C3,C4,B3,C4,D4,C4,B3,C4,
+        //     E3,C4,B3,C4,D4,C4,B3,C4,
+        //     G3,C4,B3,C4,D4,C4,B3,C4,
+        //     ],sixteenth)
         ;
 
 
